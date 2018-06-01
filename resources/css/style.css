@@ -2,7 +2,7 @@ html{
   font-size: 18px;
 }
 
-.main{
+body{
   width: 100%;
   text-align: center;
   display: block;
@@ -10,13 +10,18 @@ html{
 }
 
 .header{
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
   background-color: black;
   color: white;
 }
+.flexcontainer{
+  margin: 0 auto;
+  max-width: 960px;
+  display: flex;
+  color: white;
+}
+
 .header img{
+  margin-top: 0.5rem;
   height: 1.5rem;
   margin-left: 0.5rem;
 }
@@ -26,25 +31,137 @@ html{
 }
 
 .banner{
-  max-width: 960px;
-  margin: 0 auto;
   height: 25rem;
   background-image: url("../../resources/media/moto.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.banner h3{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .banner .flexcontainer{
+  margin: 0 auto;
+  max-width: 960px;
   display: flex;
   color: white;
 }
 .banner .flexcontainer .flexitem{
-  font-size: 2rem;
+  padding: 0.66rem;
   width: 20rem;
   background-color: black;
   margin-top: 9rem;
 }
 
-.banner nav{
+nav{
+  background-color: firebrick ;
+}
+nav ul{
+      width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 0;
+      list-style: none;
+    }
 
+a{
+  text-decoration: none;
+  color:white;
+}
+
+.flexitem{
+  width: 30%;
+  height: auto;
+  padding: 2rem;
+}
+
+.products{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.product{
+  width: 30%;
+}
+
+.product span{
+  padding: 0.5em;
+}
+
+.product-image{
+  border: 4px solid black;
+  padding: 2em 0;
+  height: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image img {
+    max-width: 8rem;
+}
+
+span{
+  background-color: black;
+  display: block;
+  color: white;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.infocontainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.info{
+  width: 35%;
+}
+
+.information{
+  background-color: white;
+  color: black;
+  text-align: left
+}
+
+.description{
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+.product-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0 0;
+}
+
+.footercontainer {
+  background-color: black;
+  margin-top: 4rem;
+  padding: 5em 0;
+}
+
+footer{
+  width: 960px;
+  margin: 0 auto;
+  color: white;
+  text-align: left;
+}
+
+@media only screen and (max-width:1024px){
+  .product.glasses {
+      display: none;
+  }
+
+  .product{
+    width: 47%;
+  }
 }
