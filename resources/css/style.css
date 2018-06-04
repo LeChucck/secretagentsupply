@@ -40,6 +40,7 @@ body{
 .banner h3{
   font-size: 2rem;
   font-weight: bold;
+  margin-top: 0.25rem;
 }
 
 .banner .flexcontainer{
@@ -49,10 +50,11 @@ body{
   color: white;
 }
 .banner .flexcontainer .flexitem{
-  padding: 0.66rem;
+  text-align: left;
   width: 20rem;
   background-color: black;
   margin-top: 9rem;
+  padding: 2rem 3rem;
 }
 
 nav{
@@ -147,6 +149,7 @@ span{
   background-color: black;
   margin-top: 4rem;
   padding: 5em 0;
+  display: flex;
 }
 
 footer{
@@ -156,12 +159,76 @@ footer{
   text-align: left;
 }
 
+.smallmenu{
+    display: none;
+}
+
+
+
 @media only screen and (max-width:1024px){
   .product.glasses {
       display: none;
   }
+  nav{
+    display: flex;
+  }
+  .smallmenu{
+    display: block;
+    text-align: center;
+  }
+
+  .bigmenu{
+    display: none;
+  }
 
   .product{
     width: 47%;
+  }
+}
+
+@media only screen and (max-width:470px){
+  .banner .flexcontainer .flexitem{
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+  }
+
+  .banner{
+    height: 15rem;
+  }
+  .banner h2{
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+
+  .banner h3{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .product{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .product.watch{
+    display: none;
+  }
+
+  .infocontainer{
+    display: block;
+  }
+
+  .info{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+  }
+
+  .footercontainer{
+    justify-content: center;
+  }
+
+  footer{
+    text-align: center;
   }
 }
